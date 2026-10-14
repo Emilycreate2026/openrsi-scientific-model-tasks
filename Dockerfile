@@ -4,5 +4,5 @@ WORKDIR /opt/openrsi-author
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . ./
-RUN python tools.py verify
+RUN python tools.py verify && chmod -R go-rwx cases/*/judge
 ENTRYPOINT ["python", "tools.py"]

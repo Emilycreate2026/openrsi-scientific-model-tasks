@@ -1,0 +1,226 @@
+{
+  "reactions": [
+    {
+      "id": "R01",
+      "equation": "H2 + 2* <=> 2H*",
+      "reactants": {
+        "H2": 1,
+        "*": 2
+      },
+      "products": {
+        "H*": 2
+      },
+      "class": "dissociative adsorption"
+    },
+    {
+      "id": "R02",
+      "equation": "H2 + * <=> H2*",
+      "reactants": {
+        "H2": 1,
+        "*": 1
+      },
+      "products": {
+        "H2*": 1
+      },
+      "class": "molecular adsorption"
+    },
+    {
+      "id": "R03",
+      "equation": "H2* + * <=> 2H*",
+      "reactants": {
+        "H2*": 1,
+        "*": 1
+      },
+      "products": {
+        "H*": 2
+      },
+      "class": "surface dissociation"
+    },
+    {
+      "id": "R04",
+      "equation": "A + * <=> A*",
+      "reactants": {
+        "A": 1,
+        "*": 1
+      },
+      "products": {
+        "A*": 1
+      },
+      "class": "molecular adsorption"
+    },
+    {
+      "id": "R05",
+      "equation": "B + * <=> B*",
+      "reactants": {
+        "B": 1,
+        "*": 1
+      },
+      "products": {
+        "B*": 1
+      },
+      "class": "molecular adsorption"
+    },
+    {
+      "id": "R06",
+      "equation": "C + * <=> C*",
+      "reactants": {
+        "C": 1,
+        "*": 1
+      },
+      "products": {
+        "C*": 1
+      },
+      "class": "molecular adsorption"
+    },
+    {
+      "id": "R07",
+      "equation": "A* + H* <=> AH* + *",
+      "reactants": {
+        "A*": 1,
+        "H*": 1
+      },
+      "products": {
+        "AH*": 1,
+        "*": 1
+      },
+      "class": "surface hydrogenation (LH)"
+    },
+    {
+      "id": "R08",
+      "equation": "AH* + H* <=> B* + *",
+      "reactants": {
+        "AH*": 1,
+        "H*": 1
+      },
+      "products": {
+        "B*": 1,
+        "*": 1
+      },
+      "class": "surface hydrogenation (LH)"
+    },
+    {
+      "id": "R09",
+      "equation": "B* + H* <=> BH* + *",
+      "reactants": {
+        "B*": 1,
+        "H*": 1
+      },
+      "products": {
+        "BH*": 1,
+        "*": 1
+      },
+      "class": "surface hydrogenation (LH)"
+    },
+    {
+      "id": "R10",
+      "equation": "BH* + H* <=> C + 2*",
+      "reactants": {
+        "BH*": 1,
+        "H*": 1
+      },
+      "products": {
+        "C": 1,
+        "*": 2
+      },
+      "class": "hydrogenation with direct desorption"
+    },
+    {
+      "id": "R11",
+      "equation": "BH* + H* <=> C* + *",
+      "reactants": {
+        "BH*": 1,
+        "H*": 1
+      },
+      "products": {
+        "C*": 1,
+        "*": 1
+      },
+      "class": "surface hydrogenation (LH)"
+    },
+    {
+      "id": "R12",
+      "equation": "A* + H2 <=> B*",
+      "reactants": {
+        "A*": 1,
+        "H2": 1
+      },
+      "products": {
+        "B*": 1
+      },
+      "class": "Eley-Rideal hydrogenation"
+    },
+    {
+      "id": "R13",
+      "equation": "A* + 2H* <=> B* + 2*",
+      "reactants": {
+        "A*": 1,
+        "H*": 2
+      },
+      "products": {
+        "B*": 1,
+        "*": 2
+      },
+      "class": "concerted double hydrogenation"
+    },
+    {
+      "id": "R14",
+      "equation": "A* <=> X*",
+      "reactants": {
+        "A*": 1
+      },
+      "products": {
+        "X*": 1
+      },
+      "class": "isomerisation to a site-blocking spectator"
+    },
+    {
+      "id": "R15",
+      "equation": "2A* <=> D* + *",
+      "reactants": {
+        "A*": 2
+      },
+      "products": {
+        "D*": 1,
+        "*": 1
+      },
+      "class": "dimerisation to a site-blocking spectator"
+    },
+    {
+      "id": "R16",
+      "equation": "B* + H2 <=> C + *",
+      "reactants": {
+        "B*": 1,
+        "H2": 1
+      },
+      "products": {
+        "C": 1,
+        "*": 1
+      },
+      "class": "Eley-Rideal over-hydrogenation"
+    },
+    {
+      "id": "R17",
+      "equation": "2AH* <=> A* + B*",
+      "reactants": {
+        "AH*": 2
+      },
+      "products": {
+        "A*": 1,
+        "B*": 1
+      },
+      "class": "surface disproportionation"
+    },
+    {
+      "id": "R18",
+      "equation": "A + H* <=> AH*",
+      "reactants": {
+        "A": 1,
+        "H*": 1
+      },
+      "products": {
+        "AH*": 1
+      },
+      "class": "Eley-Rideal adsorption onto H*"
+    }
+  ]
+}

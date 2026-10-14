@@ -1,0 +1,16 @@
+{
+  "source_case": "adaptive-treatment-policy-recovery",
+  "archive_date": "2026-09-29",
+  "runs": {
+    "clean-a": {
+      "artifact_sha256": "cba8317f15ad9c2cdaa1e5d026fe80e2f9b6fa470211fed417da02de52ec757f",
+      "metric": 51.46555166666667,
+      "original_checks_passed": true
+    },
+    "clean-b": {
+      "artifact_sha256": "cba8317f15ad9c2cdaa1e5d026fe80e2f9b6fa470211fed417da02de52ec757f",
+      "metric": 51.46555166666667,
+      "original_checks_passed": true
+    }
+  }
+}

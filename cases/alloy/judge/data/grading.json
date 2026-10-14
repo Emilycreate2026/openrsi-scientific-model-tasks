@@ -1,0 +1,66 @@
+{
+  "f1_threshold": 0.4,
+  "feasible_ranges": {
+    "elongation_pct": [
+      0.0,
+      150.0
+    ],
+    "hardness_hv": [
+      0.0,
+      2000.0
+    ],
+    "sigma_fraction": [
+      0.0,
+      1.0
+    ],
+    "yield_strength_mpa": [
+      0.0,
+      5000.0
+    ]
+  },
+  "groups": [
+    "interpolation",
+    "element_holdout",
+    "process_holdout"
+  ],
+  "null_constants": {
+    "elongation_pct": 19.0,
+    "hardness_hv": 329.5,
+    "sigma_fraction": 0.0,
+    "yield_strength_mpa": 742.5
+  },
+  "schema_version": 1,
+  "skill_thresholds": {
+    "elongation_pct": {
+      "element_holdout": 0.5,
+      "interpolation": 0.5,
+      "process_holdout": 0.45
+    },
+    "hardness_hv": {
+      "element_holdout": 0.4,
+      "interpolation": 0.45,
+      "process_holdout": 0.3
+    },
+    "sigma_fraction": {
+      "element_holdout": 0.4,
+      "interpolation": 0.4,
+      "process_holdout": 0.4
+    },
+    "yield_strength_mpa": {
+      "element_holdout": 0.5,
+      "interpolation": 0.5,
+      "process_holdout": 0.45
+    }
+  },
+  "spec": {
+    "elongation_pct_min": 10.0,
+    "sigma_fraction_max": 0.02,
+    "yield_strength_mpa_min": 700.0
+  },
+  "targets": [
+    "yield_strength_mpa",
+    "elongation_pct",
+    "hardness_hv",
+    "sigma_fraction"
+  ]
+}

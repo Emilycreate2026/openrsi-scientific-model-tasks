@@ -1,0 +1,73 @@
+{
+  "active_reactions": [
+    "R01",
+    "R04",
+    "R05",
+    "R07",
+    "R09",
+    "R10",
+    "R17",
+    "R14"
+  ],
+  "kinetics": {
+    "R01": {
+      "Ea_kJ_mol": 17.3512,
+      "log10_A": 7.02264
+    },
+    "R04": {
+      "Ea_kJ_mol": 7.44751,
+      "log10_A": 5.99672
+    },
+    "R05": {
+      "Ea_kJ_mol": 15.2302,
+      "log10_A": 6.06861
+    },
+    "R07": {
+      "Ea_kJ_mol": 113.924,
+      "log10_A": 13.4033
+    },
+    "R09": {
+      "Ea_kJ_mol": 82.7425,
+      "log10_A": 13.0903
+    },
+    "R10": {
+      "Ea_kJ_mol": 107.862,
+      "log10_A": 13.0685
+    },
+    "R14": {
+      "Ea_kJ_mol": 109.826,
+      "log10_A": 9.22078
+    },
+    "R17": {
+      "Ea_kJ_mol": 54.9721,
+      "log10_A": 13.5114
+    }
+  },
+  "notes": "Minimal complete mechanisms enumerated from the candidate library, screened on the early transients with weighted least squares, combined with dead-end steps and selected by BIC on the full data set, expanded/contracted by BIC, then refit with free pre-exponentials. Reverse rate constants follow from detailed balance with the reported adsorbate thermochemistry; all reverse barriers are non-negative by construction.",
+  "surface_thermo": {
+    "A*": {
+      "H_kJ_mol": 125.899,
+      "S_J_mol_K": 68.4985
+    },
+    "AH*": {
+      "H_kJ_mol": 86.9221,
+      "S_J_mol_K": 72.4151
+    },
+    "B*": {
+      "H_kJ_mol": -17.61,
+      "S_J_mol_K": 62.9034
+    },
+    "BH*": {
+      "H_kJ_mol": -61.603,
+      "S_J_mol_K": 81.9052
+    },
+    "H*": {
+      "H_kJ_mol": -33.8515,
+      "S_J_mol_K": 15.5464
+    },
+    "X*": {
+      "H_kJ_mol": 99.0994,
+      "S_J_mol_K": 59.8118
+    }
+  }
+}

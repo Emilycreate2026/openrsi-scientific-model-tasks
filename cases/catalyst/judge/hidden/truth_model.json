@@ -1,0 +1,75 @@
+{
+  "active_reactions": [
+    "R01",
+    "R04",
+    "R05",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R14"
+  ],
+  "kinetics": {
+    "R01": {
+      "log10_A": 6.6395,
+      "Ea_kJ_mol": 6.032
+    },
+    "R04": {
+      "log10_A": 6.2915,
+      "Ea_kJ_mol": 0.0
+    },
+    "R05": {
+      "log10_A": 6.3358,
+      "Ea_kJ_mol": 0.0
+    },
+    "R07": {
+      "log10_A": 13.2125,
+      "Ea_kJ_mol": 114.644
+    },
+    "R08": {
+      "log10_A": 13.0143,
+      "Ea_kJ_mol": 102.659
+    },
+    "R09": {
+      "log10_A": 12.9343,
+      "Ea_kJ_mol": 96.35
+    },
+    "R10": {
+      "log10_A": 12.935,
+      "Ea_kJ_mol": 102.164
+    },
+    "R14": {
+      "log10_A": 9.0651,
+      "Ea_kJ_mol": 108.002
+    }
+  },
+  "surface_thermo": {
+    "H*": {
+      "H_kJ_mol": -34.096,
+      "S_J_mol_K": 15.197
+    },
+    "A*": {
+      "H_kJ_mol": 124.535,
+      "S_J_mol_K": 65.136
+    },
+    "AH*": {
+      "H_kJ_mol": 69.471,
+      "S_J_mol_K": 69.151
+    },
+    "B*": {
+      "H_kJ_mol": -27.267,
+      "S_J_mol_K": 74.016
+    },
+    "BH*": {
+      "H_kJ_mol": -57.219,
+      "S_J_mol_K": 81.967
+    },
+    "X*": {
+      "H_kJ_mol": 82.455,
+      "S_J_mol_K": 44.613
+    }
+  },
+  "generator_version": "1.0.1",
+  "seed": 20260921,
+  "note": "verifier-only ground truth; never ship to the agent environment"
+}

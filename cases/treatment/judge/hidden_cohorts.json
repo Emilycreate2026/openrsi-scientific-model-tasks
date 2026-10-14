@@ -1,0 +1,7 @@
+{
+  "_comment": "Verifier-held cohorts. Seeds and sizes are private to tests/; the released cohort used seed 20260921 with first_id 100000 (see authoring/provenance/release_manifest.json).",
+  "world_a": {"params": "default", "seed": 7734121, "n": 6000, "first_id": 500000,
+              "description": "fresh patients from the same population as the released cohort"},
+  "world_b": {"params": "shifted", "seed": 9182736, "n": 6000, "first_id": 700000,
+              "description": "older, frailer, more comorbid referral population; identical physiology and protocol"}
+}

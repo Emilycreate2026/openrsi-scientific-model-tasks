@@ -1,0 +1,126 @@
+{
+  "gas_species": [
+    {
+      "name": "H2",
+      "composition": {
+        "H": 2
+      },
+      "H_kJ_mol": 0.0,
+      "S_J_mol_K": 130.7,
+      "description": "dihydrogen"
+    },
+    {
+      "name": "A",
+      "composition": {
+        "S": 1
+      },
+      "H_kJ_mol": 210.0,
+      "S_J_mol_K": 205.0,
+      "description": "unsaturated substrate (feed)"
+    },
+    {
+      "name": "B",
+      "composition": {
+        "S": 1,
+        "H": 2
+      },
+      "H_kJ_mol": 45.0,
+      "S_J_mol_K": 222.0,
+      "description": "target partially hydrogenated product"
+    },
+    {
+      "name": "C",
+      "composition": {
+        "S": 1,
+        "H": 4
+      },
+      "H_kJ_mol": -80.0,
+      "S_J_mol_K": 235.0,
+      "description": "over-hydrogenated by-product"
+    }
+  ],
+  "surface_species": [
+    {
+      "name": "*",
+      "composition": {},
+      "description": "free active site (reference: H = 0, S = 0)"
+    },
+    {
+      "name": "H*",
+      "composition": {
+        "H": 1
+      },
+      "description": "adsorbed hydrogen atom"
+    },
+    {
+      "name": "A*",
+      "composition": {
+        "S": 1
+      },
+      "description": "adsorbed substrate"
+    },
+    {
+      "name": "AH*",
+      "composition": {
+        "S": 1,
+        "H": 1
+      },
+      "description": "half-hydrogenated intermediate"
+    },
+    {
+      "name": "B*",
+      "composition": {
+        "S": 1,
+        "H": 2
+      },
+      "description": "adsorbed target product"
+    },
+    {
+      "name": "BH*",
+      "composition": {
+        "S": 1,
+        "H": 3
+      },
+      "description": "half-hydrogenated intermediate of the second stage"
+    },
+    {
+      "name": "X*",
+      "composition": {
+        "S": 1
+      },
+      "description": "strongly bound spectator isomer of A* (site blocker)"
+    },
+    {
+      "name": "H2*",
+      "composition": {
+        "H": 2
+      },
+      "description": "molecularly adsorbed dihydrogen"
+    },
+    {
+      "name": "C*",
+      "composition": {
+        "S": 1,
+        "H": 4
+      },
+      "description": "adsorbed over-hydrogenated product"
+    },
+    {
+      "name": "D*",
+      "composition": {
+        "S": 2
+      },
+      "description": "surface dimer of the substrate (site blocker)"
+    }
+  ],
+  "constants": {
+    "R_kJ_mol_K": 0.008314462618,
+    "R_bar_m3_mol_K": 8.314462618e-05
+  },
+  "standard_state": {
+    "gas_pressure_bar": 1.0,
+    "surface_coverage": 1.0,
+    "free_site_reference": "H = 0 kJ/mol, S = 0 J/(mol K)"
+  },
+  "notes": "Gas-phase enthalpies and entropies are known and fixed. Adsorbate enthalpies and entropies are unknown and must be inferred; they determine every reverse rate constant through detailed balance (see /app/mkm/README.md)."
+}

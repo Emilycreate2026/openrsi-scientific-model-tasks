@@ -1,0 +1,19 @@
+{
+  "decision_points": 6,
+  "actions": {
+    "0": "no drug (0 units)",
+    "1": "standard dose (1 unit)",
+    "2": "high dose (2 units)"
+  },
+  "dose_units": [
+    0.0,
+    1.0,
+    2.0
+  ],
+  "step_cost_per_unit": 1.0,
+  "constraints": {
+    "cumulative_dose_budget_units": 7.0,
+    "high_dose_forbidden_when_renal_marker_above": 2.4,
+    "high_dose_forbidden_immediately_after_high_dose": true
+  }
+}

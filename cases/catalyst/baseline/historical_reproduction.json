@@ -1,0 +1,16 @@
+{
+  "source_case": "catalyst-microkinetic-network-inference",
+  "archive_date": "2026-09-29",
+  "runs": {
+    "clean-a": {
+      "artifact_sha256": "90edef66c017e99cb85bbae6a7ca34cdddf157b2d7fc06e18a2d0bd878edc1dd",
+      "metric": 0.006783494785813174,
+      "original_checks_passed": true
+    },
+    "clean-b": {
+      "artifact_sha256": "90edef66c017e99cb85bbae6a7ca34cdddf157b2d7fc06e18a2d0bd878edc1dd",
+      "metric": 0.006783494785813174,
+      "original_checks_passed": true
+    }
+  }
+}

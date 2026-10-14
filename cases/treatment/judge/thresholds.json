@@ -1,0 +1,7 @@
+{
+  "_comment": "Provisional gates calibrated on world atpr-world-v2; evidence in authoring/evidence/ (reference_values.json, controls/controls_report.json, witness_gcomp/, reproducibility_receipt.json) and README.md.",
+  "min_improvement_world_a": 4.5,
+  "min_improvement_world_b": 4.0,
+  "max_value_estimate_abs_error": 5.0,
+  "max_protocol_violations": 0
+}

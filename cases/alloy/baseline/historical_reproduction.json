@@ -1,0 +1,16 @@
+{
+  "source_case": "sparse-multitask-alloy-screening",
+  "archive_date": "2026-09-29",
+  "runs": {
+    "clean-a": {
+      "artifact_sha256": "570991a6522833dddceae7146fab5191bc8cac8aab4a67e34d3546ad3569293c",
+      "metric": 0.871242468340986,
+      "original_checks_passed": true
+    },
+    "clean-b": {
+      "artifact_sha256": "570991a6522833dddceae7146fab5191bc8cac8aab4a67e34d3546ad3569293c",
+      "metric": 0.871242468340986,
+      "original_checks_passed": true
+    }
+  }
+}

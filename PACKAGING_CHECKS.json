@@ -1,0 +1,17 @@
+[
+  {
+    "case": "catalyst",
+    "work_boundary": "pass",
+    "missing_artifact_rejected": "pass"
+  },
+  {
+    "case": "treatment",
+    "work_boundary": "pass",
+    "missing_artifact_rejected": "pass"
+  },
+  {
+    "case": "alloy",
+    "work_boundary": "pass",
+    "missing_artifact_rejected": "pass"
+  }
+]

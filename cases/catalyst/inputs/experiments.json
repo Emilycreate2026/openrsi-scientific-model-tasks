@@ -1,0 +1,433 @@
+{
+  "reactor": {
+    "type": "isothermal gradientless (CSTR) flow reactor with a fixed catalyst charge",
+    "residence_time_s": 5.0,
+    "site_density_mol_m3": 0.12,
+    "total_pressure_bar": 1.0,
+    "carrier_gas": "inert (balance to total pressure; not modelled)"
+  },
+  "measurement": {
+    "observed_species": [
+      "H2",
+      "A",
+      "B",
+      "C"
+    ],
+    "reactant_species": [
+      "H2",
+      "A"
+    ],
+    "product_species": [
+      "B",
+      "C"
+    ],
+    "noise_model": {
+      "relative_sd": 0.02,
+      "absolute_sd_bar": 0.0001,
+      "description": "y = P_true * (1 + e_rel) + e_abs with independent Gaussian e_rel ~ N(0, relative_sd^2) and e_abs ~ N(0, absolute_sd_bar^2); values are not clipped"
+    },
+    "units": {
+      "time": "s",
+      "partial_pressure": "bar",
+      "temperature": "K"
+    }
+  },
+  "sampling_times_s": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    5.5,
+    6.0,
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5,
+    9.0,
+    9.5,
+    10.0,
+    12.0,
+    14.0,
+    16.0,
+    18.0,
+    20.0,
+    22.0,
+    24.0,
+    26.0,
+    28.0,
+    30.0,
+    32.0,
+    34.0,
+    36.0,
+    38.0,
+    40.0,
+    42.0,
+    44.0,
+    46.0,
+    48.0,
+    50.0,
+    52.0,
+    54.0,
+    56.0,
+    58.0,
+    60.0,
+    62.0,
+    64.0,
+    66.0,
+    68.0,
+    70.0,
+    72.0,
+    74.0,
+    76.0,
+    78.0,
+    80.0,
+    82.0,
+    84.0,
+    86.0,
+    88.0,
+    90.0,
+    92.0,
+    94.0,
+    96.0,
+    98.0,
+    100.0,
+    102.0,
+    104.0,
+    106.0,
+    108.0,
+    110.0,
+    112.0,
+    114.0,
+    116.0,
+    118.0,
+    120.0,
+    122.0,
+    124.0,
+    126.0,
+    128.0,
+    130.0,
+    132.0,
+    134.0,
+    136.0,
+    138.0,
+    140.0,
+    142.0,
+    144.0,
+    146.0,
+    148.0,
+    150.0,
+    152.0,
+    154.0,
+    156.0,
+    158.0,
+    160.0,
+    162.0,
+    164.0,
+    166.0,
+    168.0,
+    170.0,
+    172.0,
+    174.0,
+    176.0,
+    178.0,
+    180.0,
+    182.0,
+    184.0,
+    186.0,
+    188.0,
+    190.0,
+    192.0,
+    194.0,
+    196.0,
+    198.0,
+    200.0,
+    202.0,
+    204.0,
+    206.0,
+    208.0,
+    210.0,
+    212.0,
+    214.0,
+    216.0,
+    218.0,
+    220.0,
+    222.0,
+    224.0,
+    226.0,
+    228.0,
+    230.0,
+    232.0,
+    234.0,
+    236.0,
+    238.0,
+    240.0,
+    242.0,
+    244.0,
+    246.0,
+    248.0,
+    250.0,
+    252.0,
+    254.0,
+    256.0,
+    258.0,
+    260.0,
+    262.0,
+    264.0,
+    266.0,
+    268.0,
+    270.0,
+    272.0,
+    274.0,
+    276.0,
+    278.0,
+    280.0,
+    282.0,
+    284.0,
+    286.0,
+    288.0,
+    290.0,
+    292.0,
+    294.0,
+    296.0,
+    298.0,
+    300.0
+  ],
+  "experiments": [
+    {
+      "id": "E01",
+      "temperature_K": 460.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.3,
+            "A": 0.05
+          }
+        }
+      ],
+      "protocol": "step-up",
+      "description": "step-up of H2/A feed into inert-filled reactor, clean surface",
+      "trace_file": "traces/E01.csv"
+    },
+    {
+      "id": "E02",
+      "temperature_K": 460.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.1,
+            "A": 0.02
+          }
+        }
+      ],
+      "protocol": "step-up",
+      "description": "step-up, lean feed",
+      "trace_file": "traces/E02.csv"
+    },
+    {
+      "id": "E03",
+      "temperature_K": 500.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.3,
+            "A": 0.05
+          }
+        }
+      ],
+      "protocol": "step-up",
+      "description": "step-up, reference feed",
+      "trace_file": "traces/E03.csv"
+    },
+    {
+      "id": "E04",
+      "temperature_K": 500.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.1,
+            "A": 0.05
+          }
+        }
+      ],
+      "protocol": "step-up",
+      "description": "step-up, hydrogen-lean feed",
+      "trace_file": "traces/E04.csv"
+    },
+    {
+      "id": "E05",
+      "temperature_K": 500.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.3,
+            "A": 0.02
+          }
+        }
+      ],
+      "protocol": "step-up",
+      "description": "step-up, substrate-lean feed",
+      "trace_file": "traces/E05.csv"
+    },
+    {
+      "id": "E06",
+      "temperature_K": 540.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.3,
+            "A": 0.05
+          }
+        }
+      ],
+      "protocol": "step-up",
+      "description": "step-up, reference feed, high temperature",
+      "trace_file": "traces/E06.csv"
+    },
+    {
+      "id": "E07",
+      "temperature_K": 540.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.1,
+            "A": 0.02
+          }
+        }
+      ],
+      "protocol": "step-up",
+      "description": "step-up, lean feed, high temperature",
+      "trace_file": "traces/E07.csv"
+    },
+    {
+      "id": "E08",
+      "temperature_K": 500.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.3,
+            "A": 0.05,
+            "B": 0.03
+          }
+        }
+      ],
+      "protocol": "step-up",
+      "description": "step-up with product B co-fed",
+      "trace_file": "traces/E08.csv"
+    },
+    {
+      "id": "E09",
+      "temperature_K": 500.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.3,
+            "A": 0.05,
+            "C": 0.03
+          }
+        }
+      ],
+      "protocol": "step-up",
+      "description": "step-up with product C co-fed",
+      "trace_file": "traces/E09.csv"
+    },
+    {
+      "id": "E10",
+      "temperature_K": 500.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.3,
+            "A": 0.05
+          }
+        },
+        {
+          "t_start_s": 150.0,
+          "feed_bar": {
+            "H2": 0.3
+          }
+        }
+      ],
+      "protocol": "switch",
+      "description": "step-up, then substrate removed from the feed at 150 s (hydrogen titration of the surface)",
+      "trace_file": "traces/E10.csv"
+    },
+    {
+      "id": "E11",
+      "temperature_K": 540.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.1,
+            "A": 0.05
+          }
+        },
+        {
+          "t_start_s": 150.0,
+          "feed_bar": {}
+        }
+      ],
+      "protocol": "switch",
+      "description": "step-up, then switch to pure inert at 150 s",
+      "trace_file": "traces/E11.csv"
+    },
+    {
+      "id": "E12",
+      "temperature_K": 500.0,
+      "initial_state": "clean_inert",
+      "feed_program": [
+        {
+          "t_start_s": 0.0,
+          "feed_bar": {
+            "H2": 0.3,
+            "A": 0.05
+          }
+        },
+        {
+          "t_start_s": 120.0,
+          "feed_bar": {
+            "H2": 0.3
+          }
+        },
+        {
+          "t_start_s": 180.0,
+          "feed_bar": {
+            "H2": 0.3,
+            "A": 0.05
+          }
+        }
+      ],
+      "protocol": "restart",
+      "description": "step-up, hydrogen purge from 120 s, feed restored at 180 s",
+      "trace_file": "traces/E12.csv"
+    }
+  ]
+}

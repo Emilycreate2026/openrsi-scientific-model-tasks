@@ -1,0 +1,16 @@
+element_a,element_b,delta_h_mix_kj_mol
+Al,Co,-19
+Al,Cr,-10
+Al,Fe,-11
+Al,Ni,-22
+Al,Ti,-30
+Co,Cr,-4
+Co,Fe,-1
+Co,Ni,0
+Co,Ti,-28
+Cr,Fe,-1
+Cr,Ni,-7
+Cr,Ti,-7
+Fe,Ni,-2
+Fe,Ti,-17
+Ni,Ti,-35
